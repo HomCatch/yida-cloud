@@ -1,0 +1,150 @@
+#boxbox {
+  .top {
+    width: 100%;
+    display: flex;
+
+    .dev,
+    .isLine,
+    .wechat {
+      display: flex;
+      justify-content: space-between;
+      width: 33.33%;
+      background-color: #fff;
+      height: 180px;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .dev,
+    .wechat {
+
+      .left,
+      .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h3 {
+          font-weight: bold;
+          color: #495057;
+        }
+
+        p {
+          font-weight: bold;
+          color: #33485C;
+          font-size: 36px;
+          line-height: 36px;
+          margin: 10px 0;
+        }
+
+        .lifting {
+          span {
+            color: #e74c3c;
+            margin-right: 8px;
+
+            &:nth-child(2) {
+              color: #999;
+            }
+
+            &.noAdd{
+              color: #00cf97;
+            }
+          }
+        }
+      }
+
+      .right {
+        width: 40px;
+        height: 40px;
+        background-color: #dcdefc;
+        border-radius: 50%;
+      }
+    }
+
+    .isLine {
+      margin: 0 20px;
+
+      .echarts {
+        flex: 1;
+        margin: 0 20px;
+      }
+
+      .left,
+      .right {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h3 {
+          font-weight: bold;
+          color: #495057;
+        }
+
+        p {
+          font-weight: bold;
+          color: #33485C;
+          font-size: 36px;
+          line-height: 36px;
+          margin: 10px 0;
+        }
+
+        span {
+          color: #999;
+        }
+      }
+
+      .left {
+        text-align: right;
+
+        &>p,
+        &>span {
+          color: #00cf97;
+        }
+      }
+    }
+  }
+}
+
+.trendMap {
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      font-weight: bold;
+      color: #666;
+    }
+
+    .date {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+
+        li {
+          margin-right: 10px;
+
+          a {
+            text-decoration: none;
+            color: #4d83d4;
+            font-size: 14px;
+
+            &.active {
+              text-decoration: underline;
+              color: #333;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+#boxbox .top {
+  width: 100%;
+  display: flex;
+}
+#boxbox .top .dev,
+#boxbox .top .isLine,
+#boxbox .top .wechat {
+  display: flex;
+  justify-content: space-between;
+  width: 33.33%;
+  background-color: #fff;
+  height: 180px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+#boxbox .top .dev .left,
+#boxbox .top .wechat .left,
+#boxbox .top .dev .center,
+#boxbox .top .wechat .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#boxbox .top .dev .left h3,
+#boxbox .top .wechat .left h3,
+#boxbox .top .dev .center h3,
+#boxbox .top .wechat .center h3 {
+  font-weight: bold;
+  color: #495057;
+}
+#boxbox .top .dev .left p,
+#boxbox .top .wechat .left p,
+#boxbox .top .dev .center p,
+#boxbox .top .wechat .center p {
+  font-weight: bold;
+  color: #33485C;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 10px 0;
+}
+#boxbox .top .dev .left .lifting span,
+#boxbox .top .wechat .left .lifting span,
+#boxbox .top .dev .center .lifting span,
+#boxbox .top .wechat .center .lifting span {
+  color: #e74c3c;
+  margin-right: 8px;
+}
+#boxbox .top .dev .left .lifting span:nth-child(2),
+#boxbox .top .wechat .left .lifting span:nth-child(2),
+#boxbox .top .dev .center .lifting span:nth-child(2),
+#boxbox .top .wechat .center .lifting span:nth-child(2) {
+  color: #999;
+}
+#boxbox .top .dev .left .lifting span.noAdd,
+#boxbox .top .wechat .left .lifting span.noAdd,
+#boxbox .top .dev .center .lifting span.noAdd,
+#boxbox .top .wechat .center .lifting span.noAdd {
+  color: #00cf97;
+}
+#boxbox .top .dev .right,
+#boxbox .top .wechat .right {
+  width: 40px;
+  height: 40px;
+  background-color: #dcdefc;
+  border-radius: 50%;
+}
+#boxbox .top .isLine {
+  margin: 0 20px;
+}
+#boxbox .top .isLine .echarts {
+  flex: 1;
+  margin: 0 20px;
+}
+#boxbox .top .isLine .left,
+#boxbox .top .isLine .right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#boxbox .top .isLine .left h3,
+#boxbox .top .isLine .right h3 {
+  font-weight: bold;
+  color: #495057;
+}
+#boxbox .top .isLine .left p,
+#boxbox .top .isLine .right p {
+  font-weight: bold;
+  color: #33485C;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 10px 0;
+}
+#boxbox .top .isLine .left span,
+#boxbox .top .isLine .right span {
+  color: #999;
+}
+#boxbox .top .isLine .left {
+  text-align: right;
+}
+#boxbox .top .isLine .left > p,
+#boxbox .top .isLine .left > span {
+  color: #00cf97;
+}
+.trendMap {
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.trendMap .title {
+  display: flex;
+  justify-content: space-between;
+}
+.trendMap .title h3 {
+  font-weight: bold;
+  color: #666;
+}
+.trendMap .title .date {
+  display: flex;
+  align-items: center;
+}
+.trendMap .title .date ul {
+  display: flex;
+}
+.trendMap .title .date ul li {
+  margin-right: 10px;
+}
+.trendMap .title .date ul li a {
+  text-decoration: none;
+  color: #4d83d4;
+  font-size: 14px;
+}
+.trendMap .title .date ul li a.active {
+  text-decoration: underline;
+  color: #333;
+}
